@@ -184,8 +184,13 @@ if(!$conn)
 				<form action = 'pretreated_sold.php' method = 'post'>
 					<table>
 						<tr>
-							<td> <img src="images/pretreated_shirt.jpeg" class="MarginImageSweatShirt"
-								alt="tshirt" id="WhiteSweatShirt"></td>
+							<td> 
+								<img src="images/pretreated_shirt.jpeg" class="MarginImageSweatShirt"
+								alt="tshirt" id="WhiteSweatShirt">
+								
+							</td>
+
+
 						</tr>
 						<?php
 						// Getting customer id from CUSTOMER table
