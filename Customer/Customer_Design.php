@@ -249,8 +249,11 @@ if(!$conn)
 		<p><?php echo $customerid_result ?></p>
 	</div>
 
-
-
+	<div class="container">             
+		<ul class="pager">
+		  <li><a href="Thank_You.html" style="color: black;">Complete Order</a></li>
+		</ul>
+	  </div>
 
 
 <
