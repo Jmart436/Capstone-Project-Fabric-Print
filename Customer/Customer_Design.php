@@ -256,7 +256,7 @@ if(!$conn)
 	  </div>
 
 
-<
+
 	<div class="container" style = "width:350px">
   <h2>Example Shirt Prints</h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
