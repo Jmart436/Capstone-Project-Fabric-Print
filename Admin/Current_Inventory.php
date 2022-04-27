@@ -22,6 +22,11 @@ $distilled_sql = "SELECT * FROM DISTILLED_WATER";
 $distilled_result=mysqli_query($conn,$distilled_sql);
 $distilled_count=mysqli_num_rows($distilled_result);
 
+// Pre-Tretment
+$pretreatment_sql = "SELECT * FROM PRE_TREATMENT";
+$pretreatment_result=mysqli_query($conn,$pretreatment_sql);
+$pretreatment_count=mysqli_num_rows($pretreatment_result);
+
 // Black Ink
 $black_sql = "SELECT * FROM PRINTER_CARTRIDGE WHERE Color = 'Black'";
 $black_result=mysqli_query($conn,$black_sql);
@@ -356,13 +361,9 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
         <td><?php echo $teflon_count;?></td><!--Teflon Count -->
       </tr>
     </table>
-<<<<<<< HEAD
-
-=======
     <hr size = "6" width = "80%" color = "black" margin-top = "2px">
 </div>
 <div class = "myDiv">
->>>>>>> f2f2393140aa076a3f3265c71b8b4214e21fe76a
     <!--Distilled Water-->
     <table class="table table-condensed center">
       <tr>
@@ -372,6 +373,21 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
       <tr>
         <td>Distilled Water</td>
         <td><?php echo $distilled_count ?></td><!-- Distilled Water Count -->
+      </tr>
+    </table>
+
+  </div>
+
+  <div class = "myDiv">
+    <!--Pre-Treatment -->
+    <table class="table table-condensed center">
+      <tr>
+        <th>Pre-Treatment</th>
+        <th>Quantity Available</th>
+      </tr>
+      <tr>
+        <td>Pre-Treatment</td>
+        <td><?php echo $pretreatment_count ?></td><!-- Pre-Treatment Count -->
       </tr>
     </table>
 
