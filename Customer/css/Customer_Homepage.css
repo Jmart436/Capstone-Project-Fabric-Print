@@ -22,10 +22,11 @@ font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed",
 }
 .AlignTable{
 	margin: 0 auto;
+  width: 60%;
 
 }
 .MarginImage{
-	margin-right: 6em;
+  margin: 0 auto;
 }
 .MarginImageSweatShirt{
 	margin-left: 6em;

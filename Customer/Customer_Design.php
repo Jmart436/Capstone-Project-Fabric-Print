@@ -32,15 +32,15 @@ if(!$conn)
 <img src="https://webstatic.kennesaw.edu/_omni/images/global/logo_mobile.png?v=1" alt="Kennesaw State University" class="mobile_logo">
 <img src="https://webstatic.kennesaw.edu/_omni/images/global/logo_black.png?v=1" alt="Kennesaw State University" class="print_logo">
 </a>
-			 <div class="top"><a href="index.php">Kennesaw State University
+			 <div class="top"><a href="index.html">Kennesaw State University
 				   <div class="logo"></div></a></div>
 				   <div class="bottom"></div>
 		  </div>
 		  <div id="header_nav" style="border-right: 0px;">
 			<ul class="active">
-				<li><a href="index.php">Location</a></li>
+				<li><a href="index.html">Location</a></li>
 				
-				<li><a href="index.php">View Inventory</a></li>
+				<li><a href="inventory.php">View Inventory</a></li>
 			</ul>
 		</div>
 		  </div>
@@ -53,8 +53,8 @@ if(!$conn)
 		
 		}
 		table {
-			background-color: tan;
-			border: 0px;
+			
+			border: px;
 			padding: 0px;
 
 		}
@@ -92,8 +92,8 @@ if(!$conn)
 							echo"
 							<tr>
 							<td>
-							<label for = 'customer'>Customer:</label>
-							<select class='selectSpacing' name='customer' id='customer'>
+							<label for = 'customer'>Customer:
+							<select class='selectSpacing' name='customer' id='customer'></label>
 							";
 							while($row = $result->fetch_assoc()) {
 								echo "
@@ -109,38 +109,38 @@ if(!$conn)
 						?>	
 						<tr>
 							<td>
-								<label for="color">Color:</label>
+								<label for="color">Color:
 								<select class="selectSpacing" name="tshirt_color" id="color">
 									<option value="white">white</option>
 									<option value="grey">grey</option>
 									<option value="black">black</option>
-								</select>
+								</select></label>
 							</td>
 
 						</tr>
 						<tr>
 							<td>
-								<label for="size">Size:</label>
+								<label for="size">Size:
 								<select class="selectSpacing" name="tshirt_size" id="size">
 									<option value="XS">XS</option>
 									<option value="S">S</option>
 									<option value="M">M</option>
 									<option value="L">L</option>
 									<option value="XL">XL</option>
-								</select>
+								</select></label>
 							</td>
 
 						</tr>
 						<tr>
 							<td>
-								<label for="Quantity">Quantity:</label>
+								<label for="Quantity">Quantity:
 								<input class="selectSpacing" type="number" id="tshirt_quantity" name="tshirt_quantity"
-									min="0" max="250">
+									min="0" max="250"></label>
 							</td>
 
 						</tr>
 						<tr>
-							<td colspan="2" align="center"><input type="submit" name="submit" value=" SUBMIT"></td>
+							<td colspan="2" align="center"><input style="float:none;" type="submit" name="submit" value=" SUBMIT"></td>
 						</tr>
 					</table>
 				</form>
@@ -210,12 +210,12 @@ if(!$conn)
 							echo"
 							<tr>
 							<td>
-							<label for = 'customer'>Customer:</label>
+							<label for = 'customer'>Customer:
 							<select class='selectSpacing' name='customer' id='customer'>
 							";
 							while($row = $result->fetch_assoc()) {
 								echo "
-								<option value=$row[idCUSTOMER]>$row[KSU_ID]</option>
+								<option value=$row[idCUSTOMER]>$row[KSU_ID]</option></label>
 								";
 							}
 							echo "
@@ -225,37 +225,37 @@ if(!$conn)
 							echo "0 results";
 						  }
 						?>	
-						<tr>
+						<tr >
 							<td>
-								<label for="PretreatedColor">Color:</label>
+								<label for="PretreatedColor">Color:
 								<select class="selectSpacing" name="pretreated_color" id="pretreated_color">
 									<option value="white">white</option>
 									<option value="grey">grey</option>
 									<option value="black">black</option>
-								</select>
+								</select></label>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label for="size">Size:</label>
+								<label for="size">Size:
 								<select class="selectSpacing" name="pretreated_size" id="pretreated_size">
 									<option value="XS">XS</option>
 									<option value="S">S</option>
 									<option value="M">M</option>
 									<option value="L">L</option>
 									<option value="XL">XL</option>
-								</select>
+								</select></label>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label for="Quantity">Quantity:</label>
+								<label for="Quantity">Quantity:
 								<input class="selectSpacing" type="number" id="pretreated_quantity"
-									name="pretreated_quantity" min="0" max="250">
+									name="pretreated_quantity" min="0" max="250"></label>
 							</td>
 						</tr>
 						<tr>
-							<td colspan="2" align="center"><input type="submit" name="submit" value=" SUBMIT"></td>
+							<td colspan="2" align="center"><input style="float:none;" type="submit" name="submit" value=" SUBMIT"></td>
 						</tr>
 					</table>
 				</form>
