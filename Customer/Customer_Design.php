@@ -324,13 +324,16 @@ if(!$conn)
 </div>
 
 
+<!-- Button to go back to Homepage - index.html-->
+<div class="container">             
+		<ul class="pager">
+		  <li><a href="Customer_Info.html" style="color: black;">Back To Info Page</a></li>
+		</ul>
+	  </div>
 
+	
+	
 
-
-	<!-- Button to go back to Homepage - index.html-->
-	<button class="button" onClick="location.href='index.php'">
-		Back to Homepage
-	</button>
 	</div>
 </body>
 

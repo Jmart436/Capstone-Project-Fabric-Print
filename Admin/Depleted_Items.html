@@ -27,9 +27,7 @@
 		  </div>
 		  <div id="header_nav" style="border-right: 0px;">
 			<ul class="active">
-				<li><a href="index.html">Location</a></li>
-				
-				<li><a href="index.html">View Inventory</a></li>
+				<li><a style="text-decoration: none;" href="index.html">Home</a></li>
 			</ul>
 		</div>
 		  </div>
@@ -40,10 +38,10 @@
 
 <body class = "body">
 <div class="marginTop">
-  <h2> Enter Depleted Items in form and submit</h2>
+  <h2 style="text-align: center;"> Enter Depleted Items in form and submit</h2>
   <!-- Printer Cartridge-->
   <form action='dep_printer_cartridge.php' method='post'>
-    <table class="table table-condensed">
+    <table style="width: 60%; " class="table table-condensed centerTable">
       <tr>
         <th colspan="2" align="center">Printer Cartridge</th>
       </tr>
@@ -71,7 +69,7 @@
 
   <!--Distilled Water-->
   <form action='dep_distilled_water.php' method='post'>
-    <table class="table table-condensed">
+    <table style="width: 60%; " class="table table-condensed centerTable">
       <tr>
         <th colspan="2" align="center">Distilled Water</th>
       </tr>
@@ -88,7 +86,7 @@
 
   <!--Teflon-->
   <form action="dep_teflon.php" method="post">
-    <table class="table table-condensed">
+    <table style="width: 60%; " class="table table-condensed centerTable">
       <tr>
         <th colspan="2" align="center">Teflon</th>
       </tr>
@@ -105,7 +103,7 @@
 
   <!--Pre-Treatment-->
   <form action='dep_pre_treatment.php' method='post'>
-    <table class="table table-condensed">
+    <table style="width: 60%; " class="table table-condensed centerTable">
       <tr>
         <th colspan="2" align="center">Pre-Treatment</th>
       </tr>
@@ -121,11 +119,12 @@
   <br>
 
   <!--Button to go back to the Admin Homepage-->
-  <div>
-    <button class="button" id="BackToAdminHomepage" onClick="location.href='index.html'">
-      Back to Admin Homepage
-    </button>
-  </div>
+ 
+    <div class="container">             
+      <ul class="pager">
+        <li><a href="index.html" style="color: black;">Back to Admin Homepage</a></li>
+      </ul>
+      </div>
 
 
 </div>

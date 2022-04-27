@@ -19,6 +19,7 @@ table, th, td {
 
 .button {
   border: none;
+  background-color: #FDBB30;
   color: black;
   padding: 15px 32px;
   text-align: center;
@@ -27,6 +28,9 @@ table, th, td {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+.button:hover{
+  background-color: #feca44;
 }
 .selectSpacing {
 	margin-right: 3em;
@@ -51,4 +55,13 @@ table, th, td {
   width: 70%;
   color: black;
   size: "4";
+}
+
+.centerTable{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+a {
+  text-decoration: none;
 }

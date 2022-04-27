@@ -27,9 +27,9 @@
 		  </div>
 		  <div id="header_nav" style="border-right: 0px;">
 			<ul class="active">
-				<li><a href="index.hml">Location</a></li>
+				<li><a style="text-decoration: none;"href="index.html">Home</a></li>
 				
-				<li><a href="index.html">View Inventory</a></li>
+				
 			</ul>
 		</div>
 		  </div>
@@ -37,14 +37,14 @@
 		  </div>
 
 <body class = "body">
-<div class="marginTop">
+<div  class="marginTop">
 <!-- TODO: Add Dropdown menu to select Admin making the changes. Change this file to php?-->
 
-  <h1></h1>
+  
 
   <!-- Clothing-->
   <form action="clothing.php" method="post">
-    <table class="table table-condensed">
+    <table style="width: 60%; " class="table table-condensed centerTable">
       <tr>
         <th colspan="2" align="center">Clothing</th>
       </tr>
@@ -89,8 +89,7 @@
 
   <!-- Printer Cartridge-->
   <form action='printer_cartridge.php' method='post'>
-    <table class="table table-condensed center">
-      <tr>
+    <table style="width: 60%; " class="table table-condensed centerTable">      <tr>
         <th colspan="2" align="center">Printer Cartridge</th>
       </tr>
       <tr>
@@ -117,8 +116,7 @@
 
   <!--Distilled Water-->
   <form action='distilled_water.php' method='post'>
-    <table class="table table-condensed center">
-      <tr>
+    <table style="width: 60%; " class="table table-condensed centerTable">      <tr>
         <th colspan="2" align="center">Distilled Water</th>
       </tr>
       <tr>
@@ -134,8 +132,7 @@
 
   <!--Teflon-->
   <form action="teflon.php" method="post">
-    <table class="table table-condensed center">
-      <tr>
+    <table style="width: 60%; " class="table table-condensed centerTable">      <tr>
         <th colspan="2" align="center">Teflon</th>
       </tr>
       <tr>
@@ -151,8 +148,7 @@
 
   <!--Pre-Treatment-->
   <form action='pre_treatment.php' method='post'>
-    <table class="table table-condensed center">
-      <tr>
+    <table style="width: 60%; " class="table table-condensed centerTable">      <tr>
         <th colspan="2" align="center">Pre-Treatment</th>
       </tr>
       <tr>
@@ -167,12 +163,12 @@
   <br>
 
   <!--Button to go back to the Admin Homepage-->
-  <div>
-    <button class="button" id="BackToAdminHomepage" onClick="location.href='index.html'">
-      Back to Admin Homepage
-    </button>
-  </div>
 
+  <div class="container">             
+		<ul class="pager">
+		  <li><a href="index.html" style="color: black;">Back to Admin Homepage</a></li>
+		</ul>
+	  </div>
 
 </div>
 

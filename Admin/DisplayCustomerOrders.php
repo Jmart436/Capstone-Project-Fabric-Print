@@ -37,9 +37,7 @@ if(!$conn)
 		  </div>
 		  <div id="header_nav" style="border-right: 0px;">
 			<ul class="active">
-				<li><a href="index.hml">Location</a></li>
-				
-				<li><a href="index.html">View Inventory</a></li>
+      <li><a style="text-decoration: none;"href="index.html">Home</a></li>
 			</ul>
 		</div>
 		  </div>
@@ -97,10 +95,11 @@ if ($result->num_rows > 0) {
 
 
   <!--Button to go back to the Admin Homepage-->
-  <div class="myDiv">
-    <button class="button" id="BackToAdminHomepage" onClick="location.href='index.html'"> Back To Admin Homepage
-    </button>
-  </div>
+  <div class="container">             
+		<ul class="pager">
+		  <li><a href="index.html" style="color: black;">Back to Admin Homepage</a></li>
+		</ul>
+	  </div>
 </div>
 </body>
 </html>

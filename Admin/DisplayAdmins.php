@@ -36,9 +36,7 @@ if(!$conn)
 		  </div>
 		  <div id="header_nav" style="border-right: 0px;">
 			<ul class="active">
-				<li><a href="index.hml">Location</a></li>
-				
-				<li><a href="index.html">View Inventory</a></li>
+      <li><a style="text-decoration: none;" href="index.html">Home</a></li>
 			</ul>
 		</div>
 		  </div>
@@ -46,7 +44,7 @@ if(!$conn)
 		  </div>
 <body class = "body">
 <div class = "marginTop">
-<h1> Admin List </h1>
+<h1 style = "text-align:center;"> Admin List </h1>
 </body>
 </html>
 
@@ -58,7 +56,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   echo "
-  <table class = 'table table-condensed center'>
+  <table style='width: 60%; ' class='table table-condensed centerTable'>
   <tr>
   <th>Last Name</th>
   <th>First Name</th>
@@ -87,10 +85,11 @@ if ($result->num_rows > 0) {
 <!--Button to go back to the Admin Homepage-->
 <html>
   <body>
-<div class="myDiv">
-    <button class="button" id="BackToAdminHomepage" onClick="location.href='index.html'"> Back To Admin Homepage
-    </button>
-  </div>
+  <div class="container">             
+		<ul class="pager">
+		  <li><a href="index.html" style="color: black;">Back to Admin Homepage</a></li>
+		</ul>
+	  </div>
 
 </div>
 

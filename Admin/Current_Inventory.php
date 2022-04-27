@@ -232,9 +232,7 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
 		  </div>
 		  <div id="header_nav" style="border-right: 0px;">
 			<ul class="active">
-				<li><a href="index.html">Location</a></li>
-				
-				<li><a href="index.html">View Inventory</a></li>
+      <li><a style="text-decoration: none;" href="index.html">Home</a></li>
 			</ul>
 		</div>
 		  </div>
@@ -246,7 +244,7 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
 <body class = "body">
   <div class = "marginTop">
   <div class = "myDiv" >
-
+<h1 style = "text-align:center;" >Current Inventory</h1>
     <!--Clothing Items-->
     <table class="table table-condensed center" >
       <tr>
@@ -394,10 +392,12 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
   </div>
 
   <!--Button to go back to the Admin Homepage-->
-  <div class="myDiv">
-    <button class="button" id="BackToAdminHomepage" onClick="location.href='index.html'"> Back To Admin Homepage
-    </button>
-  </div>
+  
+  <div class="container">             
+		<ul class="pager">
+		  <li><a href="index.html" style="color: black;">Back to Admin Homepage</a></li>
+		</ul>
+	  </div>
   </div>
 </body>
 
