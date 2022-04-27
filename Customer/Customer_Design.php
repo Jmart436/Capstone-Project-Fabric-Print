@@ -15,6 +15,8 @@ if(!$conn)
 	<meta charset="UTF-8">
 	<title>Customer Design</title>
 	<link href="css/Customer_Homepage.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://webstatic.kennesaw.edu/_omni/css/default.css?v=3.24"><!-- Default -->
+
 
 	<!--bootstrap link-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -22,14 +24,31 @@ if(!$conn)
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	  
 </head>
-<header>
-	<h1>
-		<a href = "index.php"><img src="images/MB_Horz_3Clr_whiteLtrs.png" class="imageHeader" alt="KSU Header"/></a>
-		This is the Customer Design Page
-	</h1>
-</header>
+<div class="site_wrapper">
+	<div id="header" role="banner">
+	   <div class="inner_rim">
+		  <div class="logo_container">
+<a href="index.php">
+<img src="https://webstatic.kennesaw.edu/_omni/images/global/logo_mobile.png?v=1" alt="Kennesaw State University" class="mobile_logo">
+<img src="https://webstatic.kennesaw.edu/_omni/images/global/logo_black.png?v=1" alt="Kennesaw State University" class="print_logo">
+</a>
+			 <div class="top"><a href="index.php">Kennesaw State University
+				   <div class="logo"></div></a></div>
+				   <div class="bottom"></div>
+		  </div>
+		  <div id="header_nav" style="border-right: 0px;">
+			<ul class="active">
+				<li><a href="index.php">Location</a></li>
+				
+				<li><a href="index.php">View Inventory</a></li>
+			</ul>
+		</div>
+		  </div>
+		  </div>
+		  </div>
 
 <body class = "body">
+	<div class = "marginTop">
 	<style>
 		
 		}
@@ -312,7 +331,7 @@ if(!$conn)
 	<button class="button" onClick="location.href='index.php'">
 		Back to Homepage
 	</button>
-
+	</div>
 </body>
 
 </html>

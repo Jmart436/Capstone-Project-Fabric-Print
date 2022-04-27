@@ -171,22 +171,41 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
 	<title>Customer Homepage</title>
 	<link href="css/Customer_Homepage.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://webstatic.kennesaw.edu/_omni/css/default.css?v=3.24"><!-- Default -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
-<style>
 
-</style>
-<header>
-	<h1>
-	<a href = "index.php"><img src="images/MB_Horz_3Clr_whiteLtrs.png" class="imageHeader" alt="KSU Header"/></a>
-	</h1>
-</header>
+<div class="site_wrapper">
+	<div id="header" role="banner">
+	   <div class="inner_rim">
+		  <div class="logo_container">
+<a href="index.php">
+<img src="https://webstatic.kennesaw.edu/_omni/images/global/logo_mobile.png?v=1" alt="Kennesaw State University" class="mobile_logo">
+<img src="https://webstatic.kennesaw.edu/_omni/images/global/logo_black.png?v=1" alt="Kennesaw State University" class="print_logo">
+</a>
+			 <div class="top"><a href="index.php">Kennesaw State University
+				   <div class="logo"></div></a></div>
+				   <div class="bottom"></div>
+		  </div>
+		  <div id="header_nav" style="border-right: 0px;">
+			<ul class="active">
+				<li><a href="index.php">Location</a></li>
+				
+				<li><a href="index.php">View Inventory</a></li>
+			</ul>
+		</div>
+		  </div>
+		  </div>
+		  </div>
+		  
 
 <!-- TODO: Display live inventory count-->
 <!-- Displays Inventory counts for current inventory for the Customer-->
 <body class = "body">
+	<div class = "marginTop">
 	<h2>Location: Burruss Building 465</h2>
 	<h2>Price:</h2>
 	<li>$2 if you bring your own shirt</li>
@@ -276,6 +295,7 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
     <li class="previous"><a href="Customer_Info.html">To Customer Info Page</a></li>
     <li class="next"><a href="../Admin">To Admin Index</a></li>
   </ul>
+</div>
 </div>
 </body>
 
