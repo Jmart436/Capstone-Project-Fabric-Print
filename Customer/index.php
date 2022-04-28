@@ -208,8 +208,32 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
 	<div class = "marginTop">
 	<h2>Location: Burruss Building 465</h2>
 	<h2>Price:</h2>
-	<li>$2 if you bring your own shirt</li>
-	<li>$5 if you want to purchase a shirt</li>
+	<div style = "margin-left:30px">
+	<table style= "width:30%">
+		<tr>
+			<th>Condition</th>
+			<th>Price to print</th>
+		</tr>
+		<tr>
+			<td>You bring your own white shirt</td>
+			<td>$2</td>
+		</tr>
+		<tr>
+			<td>You bring your own non-white shirt</td>
+			<td>$3</td>
+		</tr>		
+		<tr>
+			<td>You purchase a white shirt and print</td>
+			<td>$7</td>
+		</tr>	
+		<tr>
+			<td>You purchase a non-white shirt and print</td>
+			<td>$8</td>
+		</tr>		
+
+	</table>
+</div>
+
 	<h3>Quantity available</h3>
 	<table class="table table-condensed center">
 		<tr>
@@ -278,7 +302,7 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
 		</tr>
 	</table>
 
-	<!-- Button to go to the Customer Info Page -->
+	<!-- Button to go to the Customer Info Page
 	<button class="button" onClick="location.href='Customer_Info.html'">
 		To Customer Info Page
 	</button>
@@ -289,7 +313,7 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
 		  To Admin Index
 		</button>
 	  </div>
-
+ -->
 	  <div class="container">                 
   <ul class="pager">
     <li class="previous"><a href="Customer_Info.html">To Customer Info Page</a></li>
