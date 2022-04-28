@@ -53,12 +53,15 @@ if(!$conn)
 		
 		}
 		table {
-			
-			border: px;
-			padding: 0px;
+			border-spacing: 20px;
 
 		}
-
+  td {
+        width: 250px;
+        text-align: center;
+        
+        padding: 5px;
+      }
 
 		button {
 			margin: 0 auto;
@@ -77,7 +80,7 @@ if(!$conn)
 				<form action='tshirt_sold.php' method='post'>
 					<table class = "AlignTable">
 						<tr>
-							<td><img src="images/white_tshirt_picture.jpeg" class="MarginImage" alt="tshirt"
+							<td><img src="images/white_tshirt_picture.jpeg"  alt="tshirt"
 									id="WhiteTShirtPicture"></td>
 
 						</tr>
@@ -93,11 +96,11 @@ if(!$conn)
 							<tr>
 							<td>
 							<label for = 'customer'>Customer:
-							<select class='selectSpacing' name='customer' id='customer'></label>
+							<select class='selectSpacing' name='customer' id='customer'>
 							";
 							while($row = $result->fetch_assoc()) {
 								echo "
-								<option value=$row[idCUSTOMER]>$row[KSU_ID]</option>
+								<option value=$row[idCUSTOMER]>$row[KSU_ID]</option></label>
 								";
 							}
 							echo "
@@ -109,25 +112,25 @@ if(!$conn)
 						?>	
 						<tr>
 							<td>
-								<label for="color">Color:
+								<label for="color">Color:</label>
 								<select class="selectSpacing" name="tshirt_color" id="color">
 									<option value="white">white</option>
 									<option value="grey">grey</option>
 									<option value="black">black</option>
-								</select></label>
+								</select>
 							</td>
 
 						</tr>
 						<tr>
 							<td>
-								<label for="size">Size:
+								<label for="size">Size:</label>
 								<select class="selectSpacing" name="tshirt_size" id="size">
 									<option value="XS">XS</option>
 									<option value="S">S</option>
 									<option value="M">M</option>
 									<option value="L">L</option>
 									<option value="XL">XL</option>
-								</select></label>
+								</select>
 							</td>
 
 						</tr>
@@ -192,10 +195,10 @@ if(!$conn)
 			<!-- Pretreated T-Shirt-->
 			<td>
 				<form action = 'pretreated_sold.php' method = 'post'>
-					<table>
+					<table class = "AlignTable">
 						<tr>
 							<td> 
-								<img src="images/pretreated_shirt.jpeg" class="MarginImageSweatShirt"
+								<img src="images/pretreated_shirt.jpeg" 
 								alt="tshirt" id="WhiteSweatShirt">
 								
 							</td>
@@ -225,26 +228,26 @@ if(!$conn)
 							echo "0 results";
 						  }
 						?>	
-						<tr >
+						<tr>
 							<td>
-								<label for="PretreatedColor">Color:
+								<label for="PretreatedColor">Color:</label>
 								<select class="selectSpacing" name="pretreated_color" id="pretreated_color">
 									<option value="white">white</option>
 									<option value="grey">grey</option>
 									<option value="black">black</option>
-								</select></label>
+								</select>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label for="size">Size:
+								<label for="size">Size:</label>
 								<select class="selectSpacing" name="pretreated_size" id="pretreated_size">
 									<option value="XS">XS</option>
 									<option value="S">S</option>
 									<option value="M">M</option>
 									<option value="L">L</option>
 									<option value="XL">XL</option>
-								</select></label>
+								</select>
 							</td>
 						</tr>
 						<tr>

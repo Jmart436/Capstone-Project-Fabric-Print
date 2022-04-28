@@ -315,12 +315,7 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
 		</button>
 	  </div>
  -->
-	  <div class="container">                 
-  <ul class="pager">
-    <li class="previous"><a href="Customer_Info.html">To Customer Info Page</a></li>
-    <li class="next"><a href="../Admin">To Admin Index</a></li>
-  </ul>
-</div>
+	
 
 <div class="container">             
 		<ul class="pager">
