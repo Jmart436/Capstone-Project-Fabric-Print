@@ -186,15 +186,17 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
 <img src="https://webstatic.kennesaw.edu/_omni/images/global/logo_mobile.png?v=1" alt="Kennesaw State University" class="mobile_logo">
 <img src="https://webstatic.kennesaw.edu/_omni/images/global/logo_black.png?v=1" alt="Kennesaw State University" class="print_logo">
 </a>
-			 <div class="top"><a href="index.php">Kennesaw State University
+			 <div class="top"><a href="index.html">Kennesaw State University
 				   <div class="logo"></div></a></div>
 				   <div class="bottom"></div>
 		  </div>
 		  <div id="header_nav" style="border-right: 0px;">
 			<ul class="active">
-				<li><a href="index.php">Location</a></li>
+			<li><a href="index.html">Home</a></li>
+
+				<li><a href="index.html">Location</a></li>
 				
-				<li><a href="index.php">View Inventory</a></li>
+				<li><a href="inventory.php">View Inventory</a></li>
 			</ul>
 		</div>
 		  </div>
@@ -206,10 +208,10 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
 <!-- Displays Inventory counts for current inventory for the Customer-->
 <body class = "body">
 	<div class = "marginTop">
-	<h2>Location: Burruss Building 465</h2>
+	<h2 style="margin:0 auto;">Location: Burruss Building 465</h2>
 	<h2>Price:</h2>
 	<div style = "margin-left:30px">
-	<table style= "width:30%">
+	<table style= "width:30%; margin:0 auto; margin-bottom:2em;">
 		<tr>
 			<th>Condition</th>
 			<th>Price to print</th>
@@ -234,7 +236,7 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
 	</table>
 </div>
 
-	<table class="table table-condensed center">
+<table style="width: 70%;" class = "table table-condensed center">
 		<tr>
 			<th>Item</th>
 			<th>XS</th>
@@ -319,6 +321,12 @@ $black_pre_treat_xl_count=mysqli_num_rows($black_pre_treat_xl_result);
     <li class="next"><a href="../Admin">To Admin Index</a></li>
   </ul>
 </div>
+
+<div class="container">             
+		<ul class="pager">
+		  <li><a href="Customer_Info.html" style="color: black;">To Customer Info Page</a></li>
+		</ul>
+	  </div>
 </div>
 </body>
 
